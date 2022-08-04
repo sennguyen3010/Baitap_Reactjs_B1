@@ -1,0 +1,77 @@
+.bg {
+  background-image: url(../glassesImage/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  z-index: 0;
+  color: black;
+  height: 1400px;
+  background-color: rgba(63, 63, 63, 0.5);
+}
+.bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(63, 63, 63, 0.5);
+  z-index: -1;
+}
+.bg .header {
+  background-color: rgba(63, 63, 63, 0.5);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+.bg .model {
+  padding: 50px 0;
+}
+.bg .model .item {
+  position: relative;
+}
+.bg .model .item .item-img .item-img-model {
+  width: 100%;
+}
+.bg .model .item .item-img .item-img-glasses {
+  width: 210px;
+  position: absolute;
+  top: 31%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+  opacity: 0.7;
+}
+.bg .model .item .item-content {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+  height: 170px;
+  background-color: rgba(232, 127, 37, 0.5);
+  padding: 10px;
+}
+.bg .model .item .item-content h3 {
+  text-transform: uppercase;
+  color: #8664d5;
+}
+.bg .model .item .item-content p {
+  color: #fff;
+  font-size: 20px;
+}
+.bg .glasses-list {
+  background-color: #fff;
+  padding: 50px 20px;
+}
+.bg .glasses-list .glasses {
+  border: 1px solid grey;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bg .glasses-list .glasses:hover {
+  box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.38);
+}
+.bg .glasses-list .glasses img {
+  width: 100%;
+}
